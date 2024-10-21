@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive UL Layout with Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            padding: 20px;
+            background-color: #333;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: #555;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu a:hover {
+            background-color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#"><img src= "pexels-photo-1183266 (1).webp" alt="Home Icon">Home</a></li>
+            <li><a href="#"><img src="pexels-photo-1183266 (1).webp" alt="About Icon">About</a></li>
+            <li><a href="#"><img src="pexels-photo-1183266.webp" alt="Services Icon">Services</a></li>
+            <li><a href="#"><img src="pexels-photo-1553783.webp" alt="Contact Icon">Contact</a></li>
+            <li><a href="#"><img src="pexels-photo-3014810.webp" alt="Blog Icon">Blog</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
